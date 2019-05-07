@@ -162,7 +162,7 @@
 
     .head {
       width: 100%;
-      height: 50px;
+      height: 45px;
       background: url("../assets/index/title.png") no-repeat;
       background-size: 70% 90%;
       margin-top: 20px;
@@ -176,7 +176,7 @@
       margin-left: 1%;
       border-radius: 3%;
       background-color: rgba(250, 250, 250, 0.4);
-      padding-bottom: 30px;
+      padding-bottom: 10px;
       .contentOne{
         width: 58%;
         display: inline-block;
@@ -298,7 +298,7 @@
             padding-left: 5px;
             padding-right: 5px;
             padding-top: 6px;
-            padding-bottom: 5px;
+            padding-bottom: 1px;
             margin-top: 8%;
             img{
               height:25px;
@@ -317,6 +317,7 @@
         display: flex;
         flex-direction: row;
         width:95%;
+        height: 193px;
         margin-left: 2.5%;
         background-color: white;
         img{
@@ -327,7 +328,7 @@
           width:42%;
           display: flex;
           flex-direction: column;
-          padding-top: 10px;
+          padding-top: 2px;
           p{
             color:#009ce1;
             font-weight: bolder;
@@ -346,8 +347,8 @@
               span{
                 display: inline-block;
                 width:50%;
-                height:28px;
-                line-height: 25px;
+                height:22px;
+
               }
             }
           }

@@ -151,7 +151,7 @@
 
     .head {
       width: 100%;
-      height: 50px;
+      height: 45px;
       background: url("../assets/index/title.png") no-repeat;
       background-size: 70% 90%;
       margin-top: 20px;

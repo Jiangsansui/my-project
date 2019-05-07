@@ -93,7 +93,7 @@ export default {
   font-size: 62.5%;
   .head{
     width: 100%;
-    height: 50px;
+    height: 45px;
     background: url("../assets/index/title.png") no-repeat;
     background-size: 70% 90%;
     margin-top: 20px;
@@ -229,9 +229,6 @@ export default {
   }
 
   @media only screen and (max-width: 435px){
-      .head {
-        height: 50px;
-      }
   .content{
     ul{
       padding-bottom:20px;
@@ -431,6 +428,8 @@ export default {
         }
       }
     }
+
+
     .text{
       width: 100%;
       font-size: 1rem;

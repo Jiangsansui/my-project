@@ -117,10 +117,9 @@
           height:80px;
           margin-left: 2%;
           margin-top: 2%;
-          border-radius: 30px;
           img{
-            height:50px;
-            width:50px;
+            height:40px;
+            width:40px;
             margin-top: 15px;
             margin-left: 15%;
           }
@@ -147,15 +146,15 @@
     @media only screen and (max-width: 435px){
       .content{
         ul{
-          padding-bottom:20px;
-          padding-top: 10px;
+          padding-bottom:10px;
+          padding-top: 5px;
           border-radius: 15px;
           li{
             width:22.5%;
             height:40px;
             img{
-              height:25px;
-              width:25px;
+              height:20px;
+              width:20px;
               margin-top: 7.5px;
               margin-left: 7%;
             }
