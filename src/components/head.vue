@@ -2,9 +2,53 @@
     <div class="headCo">
       <div class="content">
         <ul>
-          <li v-for="(item,index) in list" :key="index" @click="goto(index)">
-            <img :src="item.image">
-            <span>{{item.name}}</span>
+          <li @click="goto(0)">
+            <img src="../assets/buttonf.png" class="aImg" v-if="one">
+                   <img src="../assets/index/buttont.png" class="aImg" v-else>
+                  <img class="lImg" src="../assets/index/1.png">
+                 <span>首页</span>
+          </li>
+          <li @click="goto(1)">
+            <img src="../assets/buttonf.png" class="aImg" v-if="two">
+            <img src="../assets/index/buttont.png" class="aImg" v-else>
+            <img class="lImg" src="../assets/index/2.png">
+            <span>中心简介</span>
+          </li>
+          <li @click="goto(2)">
+            <img src="../assets/buttonf.png" class="aImg" v-if="three">
+            <img src="../assets/index/buttont.png" class="aImg" v-else>
+            <img class="lImg" src="../assets/index/3.png">
+            <span>办事指南</span>
+          </li>
+          <li @click="goto(3)">
+          <img src="../assets/buttonf.png" class="aImg" v-if="four">
+          <img src="../assets/index/buttont.png" class="aImg" v-else>
+          <img class="lImg" src="../assets/index/4.png">
+          <span>办事预约</span>
+        </li>
+          <li @click="goto(4)">
+            <img src="../assets/buttonf.png" class="aImg" v-if="five">
+            <img src="../assets/index/buttont.png" class="aImg" v-else>
+            <img class="lImg" src="../assets/index/5.png">
+            <span>重大项目</span>
+          </li>
+          <li @click="goto(5)">
+            <img src="../assets/buttonf.png" class="aImg" v-if="six">
+            <img src="../assets/index/buttont.png" class="aImg" v-else>
+            <img class="lImg" src="../assets/index/6.png">
+            <span>离台评价</span>
+          </li>
+          <li @click="goto(6)">
+            <img src="../assets/buttonf.png" class="aImg" v-if="seven">
+            <img src="../assets/index/buttont.png" class="aImg" v-else>
+            <img class="lImg" src="../assets/index/7.png">
+            <span>排队取号</span>
+          </li>
+          <li @click="goto(7)">
+            <img src="../assets/buttonf.png" class="aImg" v-if="eight">
+            <img src="../assets/index/buttont.png" class="aImg" v-else>
+            <img class="lImg" src="../assets/index/8.png">
+            <span>光荣榜</span>
           </li>
         </ul>
       </div>
@@ -14,57 +58,97 @@
 <script>
     export default {
         name: "head",
+      props:["num"],
       data(){
           return{
-            list:[
-              {
-                img:require("../assets/buttonf.png"),
-                image:require("../assets/index/1.png"),
-                name:"首页"
-              },
-              {
-                img:require("../assets/buttonf.png"),
-                image:require("../assets/index/2.png"),
-                name:"中心简介"
-              },
-              {
-                img:require("../assets/buttonf.png"),
-                image:require("../assets/index/3.png"),
-                name:"办事指南"
-              },
-              {
-                img:require("../assets/buttonf.png"),
-                image:require("../assets/index/4.png"),
-                name:"办事预约"
-              },
-              {
-                img:require("../assets/buttonf.png"),
-                image:require("../assets/index/5.png"),
-                name:"重大项目"
-              }, {
-                img:require("../assets/buttonf.png"),
-                image:require("../assets/index/6.png"),
-                name:"离台评价"
-              },
-              {
-                img:require("../assets/buttonf.png"),
-                image:require("../assets/index/7.png"),
-                name:"排队取号"
-              },
-              {
-                img:require("../assets/buttonf.png"),
-                image:require("../assets/index/8.png"),
-                name:"光荣榜"
-              }
-            ]
+            one:false,
+            two:true,
+            three:true,
+            four:true,
+            five:true,
+            six:true,
+            seven:true,
+            eight:true
           }
+      },
+      created(){
+         if(this.num===0)
+         {
+           this.one=false
+           this.two=true
+           this.three=true
+           this.four=true
+           this.five=true
+           this.six=true
+           this.seven=true
+           this.eight=true
+         }else if(this.num===1){
+           this.one=true
+           this.three=true
+           this.four=true
+           this.five=true
+           this.six=true
+           this.seven=true
+           this.eight=true
+           this.two=false
+         }else if(this.num===2){
+           this.one=true
+           this.two=true
+           this.three=false
+
+         }else if(this.num===3){
+           this.one=true
+           this.two=true
+           this.three=true
+           this.four=false
+
+         }
+         else if(this.num===4){
+           this.one=true
+           this.two=true
+           this.three=true
+           this.four=true
+           this.five=false
+
+         }
+         else if(this.num===5){
+           this.one=true
+           this.two=true
+           this.three=true
+           this.four=true
+           this.five=true
+           this.six=false
+
+         }
+         else if(this.num===6){
+           this.one=true
+           this.two=true
+           this.three=true
+           this.four=true
+           this.five=true
+           this.six=true
+           this.seven=false
+
+         }
+         else if(this.num===7){
+           this.one=true
+           this.two=true
+           this.three=true
+           this.four=true
+           this.five=true
+           this.six=true
+           this.seven=true
+           this.eight=false
+         }
       },
       methods:{
           goto(index){
             if(index===0)
             {
+              this.one=!this.one
               this.$router.push({path:'/'})
             }else if(index===1){
+              this.two=!this.two
               this.$router.push({path:'/zxjj'})
             }else if(index===2){
               this.$router.push({path:'/bszn'})
@@ -112,23 +196,30 @@
           width:22%;
           display: flex;
           flex-direction: row;
-          background: url("../assets/buttonf.png") no-repeat;
           background-size: 100% 100%;
           height:80px;
           margin-left: 2%;
           margin-top: 2%;
-          img{
-            height:40px;
-            width:40px;
+          position: relative;
+          .lImg{
+            height:25px;
+            width:25px;
             margin-top: 15px;
             margin-left: 15%;
+            z-index: 999;
           }
           span{
-            font-size: 4em;
-            line-height: 80px;
+            font-size: 2em;
             margin-left: 2%;
+            z-index: 9999;
+            display: inline-block;
+            width:50%;
           }
-
+          .aImg{
+            width:100%;
+            height:100%;
+            position: absolute;
+          }
         }
       }
     }
@@ -159,12 +250,43 @@
               margin-left: 7%;
             }
             span{
-              font-size: 1.5em;
-              line-height: 40px;
+              font-size: 1em;
+              width:60%;
+              height:100%;
+              line-height: 50px;
             }
           }
         }
       }
     }
+    @media only screen and (max-width: 375px){
+      .content{
+        ul{
+          margin-top: 0.2rem;
+          li{
+
+            .lImg{
+              height:20px;
+              width:20px;
+            margin-top: 0.6em;
+            }
+            span{
+              font-size: 1em;
+              line-height: 35px;
+              margin-left: 2%;
+              width:100%;
+            }
+            .aImg{
+              margin-top: -0.1rem;
+              width:100%;
+              height:100%;
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+
+
   }
 </style>

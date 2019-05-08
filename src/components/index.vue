@@ -2,7 +2,7 @@
   <div class="container">
     <div class="head"></div>
     <hr style="border:0.5px solid white;width:96%"/>
-    <head-Component></head-Component>
+    <head-Component :num="0"></head-Component>
     <div class="content">
       <div class="contentOne">
         <div class="event">
@@ -60,7 +60,9 @@
       </div>
     </div>
     <div class="home">
+      <p>海纳百川，有容乃大</p>
       <img src="../assets/index/home.png">
+      <p>欢迎使用智能导办系统</p>
     </div>
 
   </div>
@@ -168,6 +170,7 @@
       margin-top: 20px;
     }
     .content {
+      margin-top: -0.5rem;
       font-family: "Microsoft YaHei";
       width: 98%;
       display: flex;
@@ -186,16 +189,16 @@
           margin-left: 2%;
           margin-top: 5%;
           width: 100%;
-          height: 80px;
+          height: 70px;
           background-color: white;
           border-radius: 10px;
           .one{
             width: 100%;
             height: 50%;
             p{
-              color: #999999;
+              color: #222a32;
               float: left;
-              margin-inline-start: 5px;
+              margin-inline-start: 0.6rem;
             }
             input{
               outline: none;
@@ -213,64 +216,60 @@
             background-color: #e5e6e7;
             height:1px;
             margin-left: 20px;
-            margin-top: 40px;
+            margin-top: 36px;
           }
           .two{
             width: 100%;
             height: 50%;
             p{
-              color: #999999;
+              color: #222a32;
               float: left;
-              margin-inline-start: 5px;
+              margin-left: -3.1rem;
             }
             input{
               outline: none;
               width: 70%;
-              height:92%;
+              height:90%;
               border: none;
             }
-     }
-
-
-          hr{
-            margin-top: -0.2rem;
-          }
+           }
         }
         .numbgt{
           border-radius: 10px;
           width: 100%;
-          height: 200px;
+          height: 160px;
           background-color: rgba(255,255,255,0.8);
           margin-left: 2%;
-          margin-top: 1rem;
+          margin-top: 0.5rem;
           ul{
+            margin-top: 3%;
             width: 98%;
             display: inline-block;
             padding-inline-start: 0px;
             li{
               list-style: none;
               float: left;
-              width: 23%;
-              height: 50px;
+              width: 20%;
+              height: 40px;
               background: url("../assets/numbgt.png");
               background-size: 100% 100%;
               margin-left: 1.5%;
               line-height: 3rem;
-              margin-top: 0.5rem;
+              padding:2% 1.5%;
             }
             span{
-              font-size: 4em;
+              font-size: 3em;
               color: #ffffff;
             }
           }
         }
         .button{
-          margin-top: 1rem;
+          margin-top: 0.5rem;
           span{
             position: absolute;
             color: #fefefe;
             font-size: 1rem;
-            margin-left: 3rem;
+            margin-left: 2.6rem;
             line-height: 30px;
 
           }
@@ -283,7 +282,7 @@
       .right{
         width:35%;
         margin-left: 2.5%;
-            display: inline-block;
+        display: inline-block;
         ul{
           padding-inline-start:0;
           width:100%;
@@ -301,14 +300,15 @@
             padding-bottom: 1px;
             margin-top: 8%;
             img{
-              height:25px;
-              width:25px;
+              height:20px;
+              width:20px;
               margin-left: 2%;
             }
             span{
               font-size: 1.5em;
-              line-height: 28px;
+              line-height: 24px;
               margin-left: 2%;
+              margin-top: -0.2rem;
             }
           }
         }
@@ -358,9 +358,90 @@
     }
     .home{
       margin-top: 0.5rem;
+
+      p{
+        color: #ffe84f;
+        font-size: 1rem;
+        float: left;
+        margin-left: 1rem;
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: row;
+        font-family: 楷体;
+      }
+      p:last-child{
+        float: right;
+        margin-right: 1.5rem;
+      }
       img{
-        width: 80px;
-        height: 40px;
+        position: absolute;
+        width: 60px;
+        height: 35px;
+        margin-top: 1.9rem;
+        margin-left: -7.7rem;
+      }
+    }
+
+    @media only screen and (max-width: 375px){
+      .content{
+        .contentOne{
+          .event{
+            .one{
+              input{
+                width: 66%;
+                height: 86%;
+                margin-top: 0.1rem;
+                border-radius: 5px;
+              }
+            }
+            .two{
+              input{
+                width: 66%;
+                height: 86%;
+                margin-top: 0.1rem;
+                border-radius: 5px;
+              }
+            }
+
+          }
+          .numbgt{
+            height: 140px;
+            ul{
+              margin-top: 3%;
+              width: 98%;
+              li{
+                width: 18%;
+                height: 30px;
+                line-height: 2rem;
+                padding:3% 2.5%;
+              }
+              span{
+                font-size: 2.5em;
+              }
+            }
+          }
+          .button{
+            span{
+              margin-left: 2.3rem;
+            }
+          }
+        }
+      }
+      .home{
+        margin-top: -1.2rem;
+        p{
+          font-size: 0.8rem;
+          margin-left: 2rem;
+        }
+        p:last-child{
+          margin-right: 2rem;
+        }
+        img{
+          width: 55px;
+          height: 30px;
+          margin-top: 2.4rem;
+          margin-left: -6.6rem;
+        }
       }
     }
   }

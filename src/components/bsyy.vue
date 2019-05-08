@@ -2,7 +2,7 @@
   <div class="container">
     <div class="head"></div>
     <hr style="border:0.5px solid white;width:96%"/>
-    <head-Component></head-Component>
+    <head-Component :num="3"></head-Component>
     <p class="text">温馨提示：您可以在5各工作日内进行预约，请点击选择</p>
     <div class="sz">
       <ul>
@@ -43,7 +43,11 @@
       <span>返回</span>
     </div>
   </div>
-      <img class="home" src="../assets/index/home.png">
+    <div class="home">
+      <p>海纳百川，有容乃大</p>
+      <img src="../assets/index/home.png">
+      <p>欢迎使用智能导办系统</p>
+    </div>
   </div>
 </template>
 
@@ -225,7 +229,29 @@ export default {
     margin-top: -2rem;
   }
   .home{
-    margin-top: 70px;
+    margin-top: 0.5rem;
+
+    p{
+      color: #ffe84f;
+      font-size: 1rem;
+      float: left;
+      margin-left: 1rem;
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: row;
+      font-family: 楷体;
+    }
+    p:last-child{
+      float: right;
+      margin-right: 1.5rem;
+    }
+    img{
+      position: absolute;
+      width: 60px;
+      height: 35px;
+      margin-top: 1.9rem;
+      margin-left: -7.7rem;
+    }
   }
 
   @media only screen and (max-width: 435px){
@@ -316,8 +342,29 @@ export default {
      }
     }
     .home{
-      height:50px;
-      width:100px;
+      margin-top: 0.5rem;
+
+      p{
+        color: #ffe84f;
+        font-size: 1rem;
+        float: left;
+        margin-left: 1rem;
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: row;
+        font-family: 楷体;
+      }
+      p:last-child{
+        float: right;
+        margin-right: 1.5rem;
+      }
+      img{
+        position: absolute;
+        width: 60px;
+        height: 35px;
+        margin-top: 1.9rem;
+        margin-left: -7.7rem;
+      }
     }
   }
   @media only screen and (max-width: 375px){

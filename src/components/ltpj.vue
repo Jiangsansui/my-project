@@ -2,7 +2,7 @@
   <div class="container">
     <div class="head"></div>
     <hr style="border:0.5px solid white;width:96%"/>
-    <head-Component></head-Component>
+    <head-Component :num="5"></head-Component>
     <div class="content">
     <p class="text">温馨提示：只能评价当前办理的业务</p>
    <div class="event">
@@ -29,7 +29,9 @@
       </div>
     </div>
     <div class="home">
+      <p>海纳百川，有容乃大</p>
       <img src="../assets/index/home.png">
+      <p>欢迎使用智能导办系统</p>
     </div>
   </div>
 
@@ -103,6 +105,7 @@
       margin-top: 20px;
     }
 .content{
+ margin-top: -0.5rem;
   width: 98%;
   height: 450px;
   margin-left: 1%;
@@ -193,11 +196,29 @@ ul{
     }
   }
 }
-    .home {
-      margin-top: 0;
-      img {
-        width: 80px;
-        height: 40px;
+    .home{
+      margin-top: 0.5rem;
+
+      p{
+        color: #ffe84f;
+        font-size: 1rem;
+        float: left;
+        margin-left: 1rem;
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: row;
+        font-family: 楷体;
+      }
+      p:last-child{
+        float: right;
+        margin-right: 1.5rem;
+      }
+      img{
+        position: absolute;
+        width: 60px;
+        height: 35px;
+        margin-top: 1.9rem;
+        margin-left: -7.7rem;
       }
     }
   }

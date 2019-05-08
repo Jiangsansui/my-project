@@ -2,7 +2,7 @@
     <div class="container">
       <div class="head"></div>
       <hr style="border:0.5px solid white;width:96%"/>
-      <head-Component></head-Component>
+      <head-Component :num="2"></head-Component>
       <div class="content">
         <div class="btn">
        <span class="spanOne" @click="showMore">
@@ -31,16 +31,17 @@
         </div>
       </div>
       <div class="home">
+        <p>海纳百川，有容乃大</p>
         <img src="../assets/index/home.png">
+        <p>欢迎使用智能导办系统</p>
       </div>
-
     </div>
 </template>
 
 <script>
   import headComponent from './head'
     export default {
-        name: "third",
+        name: "bszn",
       components:{headComponent},
       data(){
           return{
@@ -98,6 +99,7 @@
       margin-top: 20px;
     }
     .content{
+      margin-top: -0.5rem;
       width: 98%;
       margin-left: 1%;
       border-radius: 3%;
@@ -187,9 +189,28 @@
       }
   }
     .home{
-      margin-top: 1rem;
+      margin-top: 0.5rem;
+
+      p{
+        color: #ffe84f;
+        font-size: 1rem;
+        float: left;
+        margin-left: 1rem;
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: row;
+        font-family: 楷体;
+      }
+      p:last-child{
+        float: right;
+        margin-right: 1.5rem;
+      }
       img{
-        width: 20%;
+        position: absolute;
+        width: 60px;
+        height: 35px;
+        margin-top: 1.9rem;
+        margin-left: -7.7rem;
       }
     }
   }
