@@ -161,16 +161,16 @@
     display: inline-block;
     background: url(../assets/bgt.png);
     font-size: 62.5%;
-
+    overflow: hidden;
     .head {
       width: 100%;
-      height: 45px;
+      height: 130px;
       background: url("../assets/index/title.png") no-repeat;
       background-size: 70% 90%;
       margin-top: 20px;
     }
     .content {
-      margin-top: -0.5rem;
+      margin-top: 0.5rem;
       font-family: "Microsoft YaHei";
       width: 98%;
       display: flex;
@@ -179,7 +179,6 @@
       margin-left: 1%;
       border-radius: 3%;
       background-color: rgba(250, 250, 250, 0.4);
-      padding-bottom: 10px;
       .contentOne{
         width: 58%;
         display: inline-block;
@@ -189,21 +188,23 @@
           margin-left: 2%;
           margin-top: 5%;
           width: 100%;
-          height: 70px;
+          height: 200px;
           background-color: white;
           border-radius: 10px;
           .one{
             width: 100%;
             height: 50%;
             p{
+              font-size: 34px;
               color: #222a32;
               float: left;
-              margin-inline-start: 0.6rem;
+              margin-inline-start:1rem;
             }
             input{
               outline: none;
               width: 70%;
               height:96%;
+              font-size: 34px;
               border: none;
             }
           }
@@ -212,21 +213,25 @@
             position: absolute;
             left: 0;
             display: inline-block;
-            width:233px;
+            width:610px;
             background-color: #e5e6e7;
             height:1px;
-            margin-left: 20px;
-            margin-top: 36px;
+            margin-top: 100px;
+            margin-left: 50px;
+
           }
           .two{
             width: 100%;
             height: 50%;
             p{
+              font-size: 34px;
               color: #222a32;
               float: left;
-              margin-left: -3.1rem;
+              margin-left: -8.8rem;
             }
             input{
+
+              font-size: 34px;
               outline: none;
               width: 70%;
               height:90%;
@@ -237,12 +242,12 @@
         .numbgt{
           border-radius: 10px;
           width: 100%;
-          height: 160px;
+          height: 450px;
           background-color: rgba(255,255,255,0.8);
           margin-left: 2%;
           margin-top: 0.5rem;
           ul{
-            margin-top: 3%;
+            margin-top: 1%;
             width: 98%;
             display: inline-block;
             padding-inline-start: 0px;
@@ -250,31 +255,33 @@
               list-style: none;
               float: left;
               width: 20%;
-              height: 40px;
+              height: 60px;
               background: url("../assets/numbgt.png");
               background-size: 100% 100%;
-              margin-left: 1.5%;
+              margin-left: 2.5%;
               line-height: 3rem;
-              padding:2% 1.5%;
+              padding:5% 1%;
+              margin-top: 1rem;
             }
             span{
-              font-size: 3em;
+              font-size: 5em;
               color: #ffffff;
             }
           }
         }
         .button{
-          margin-top: 0.5rem;
+          margin-top: 5rem;
           span{
             position: absolute;
             color: #fefefe;
-            font-size: 1rem;
-            margin-left: 2.6rem;
-            line-height: 30px;
+            font-size: 3rem;
+            margin-left: 8rem;
+            line-height: 90px;
+
 
           }
           img{
-            width: 50%;
+            width: 60%;
 
           }
         }
@@ -292,7 +299,7 @@
             display: flex;
             flex-direction: row;
             background-color: white;
-            border-radius: 10px;
+            border-radius: 30px;
             margin-left: 10%;
             padding-left: 5px;
             padding-right: 5px;
@@ -300,15 +307,16 @@
             padding-bottom: 1px;
             margin-top: 8%;
             img{
-              height:20px;
-              width:20px;
+              height:50px;
+              width:50px;
+              margin-top: 0.8rem;
               margin-left: 2%;
             }
             span{
-              font-size: 1.5em;
-              line-height: 24px;
-              margin-left: 2%;
-              margin-top: -0.2rem;
+              font-size: 5em;
+              height: 60px;
+              margin-left: 4%;
+              margin-top: 1.3rem;
             }
           }
         }
@@ -317,22 +325,24 @@
         display: flex;
         flex-direction: row;
         width:95%;
-        height: 193px;
+        height: 412px;
         margin-left: 2.5%;
         background-color: white;
+
         img{
           width:58%;
           height:100%;
+
         }
         .rightCon{
-          width:42%;
+          width:41%;
           display: flex;
           flex-direction: column;
-          padding-top: 2px;
+          padding-top: 4px;
           p{
             color:#009ce1;
             font-weight: bolder;
-            font-size: 3em;
+            font-size: 6em;
             margin-block-start: 0;
             margin-block-end: 0;
           }
@@ -347,7 +357,9 @@
               span{
                 display: inline-block;
                 width:50%;
-                height:22px;
+                height:47.7px;
+                font-size: 4em;
+               color: #9b9c9d;
 
               }
             }
@@ -357,93 +369,29 @@
 
     }
     .home{
-      margin-top: 0.5rem;
-
       p{
         color: #ffe84f;
-        font-size: 1rem;
+        font-size: 3rem;
         float: left;
         margin-left: 1rem;
-        margin-top: 2.5rem;
+        margin-top: 2.8rem;
         display: flex;
         flex-direction: row;
         font-family: 楷体;
       }
       p:last-child{
         float: right;
-        margin-right: 1.5rem;
+        margin-right: 1.2rem;
       }
       img{
         position: absolute;
-        width: 60px;
-        height: 35px;
-        margin-top: 1.9rem;
-        margin-left: -7.7rem;
+        width: 150px;
+        height: 80px;
+        margin-top: 4rem;
+        margin-left: -20rem;
       }
     }
 
-    @media only screen and (max-width: 375px){
-      .content{
-        .contentOne{
-          .event{
-            .one{
-              input{
-                width: 66%;
-                height: 86%;
-                margin-top: 0.1rem;
-                border-radius: 5px;
-              }
-            }
-            .two{
-              input{
-                width: 66%;
-                height: 86%;
-                margin-top: 0.1rem;
-                border-radius: 5px;
-              }
-            }
-
-          }
-          .numbgt{
-            height: 140px;
-            ul{
-              margin-top: 3%;
-              width: 98%;
-              li{
-                width: 18%;
-                height: 30px;
-                line-height: 2rem;
-                padding:3% 2.5%;
-              }
-              span{
-                font-size: 2.5em;
-              }
-            }
-          }
-          .button{
-            span{
-              margin-left: 2.3rem;
-            }
-          }
-        }
-      }
-      .home{
-        margin-top: -1.2rem;
-        p{
-          font-size: 0.8rem;
-          margin-left: 2rem;
-        }
-        p:last-child{
-          margin-right: 2rem;
-        }
-        img{
-          width: 55px;
-          height: 30px;
-          margin-top: 2.4rem;
-          margin-left: -6.6rem;
-        }
-      }
-    }
   }
 
 </style>

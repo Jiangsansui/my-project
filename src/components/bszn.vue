@@ -48,7 +48,7 @@
             showImgT:true,
             showImg:true,
             aStyle:{
-              width:'93%'
+              width:'87%'
             },
             list:[
               {imgPath:require("../assets/person.png"),name:"个人事项"},
@@ -65,7 +65,14 @@
               {name:"公安局窗口"},
               {name:"公安局窗口"},
               {name:"公安局窗口"},
+              {name:"公安局窗口"},
+              {name:"公安局窗口"},
+              {name:"公安局窗口"},
+              {name:"公安局窗口"},
+              {name:"公安局窗口"},
+              {name:"公安局窗口"},
               {name:"公安局窗口"}
+
             ],
             isShow:true
           }
@@ -91,27 +98,29 @@
     display: inline-block;
     background: url(../assets/bgt.png);
     font-size: 62.5%;
+    overflow: hidden;
     .head{
       width: 100%;
-      height: 45px;
+      height: 130px;
       background: url("../assets/index/title.png") no-repeat;
       background-size: 70% 90%;
       margin-top: 20px;
     }
     .content{
-      margin-top: -0.5rem;
+      margin-top: 0.5rem;
       width: 98%;
       margin-left: 1%;
       border-radius: 3%;
       background-color: rgba(250,250,250,0.4);
       padding-top: 20px;
+      display: inline-block;
        .btn{
          width:100%;
          margin-left: -20%;
        .spanOne{
          display: inline-block;
          width:25%;
-         height:40px;
+         height:100px;
          position: relative;
          margin-left: 8%;
          img{
@@ -126,8 +135,8 @@
            left: 0;
            width:100%;
            height:100%;
-           font-size: 2em;
-           line-height: 40px;
+           font-size: 5em;
+           line-height: 80px;
          }
        }
        }
@@ -136,27 +145,27 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-     padding-bottom: 30px;
+        padding-bottom: 30px;
         .item{
-          height:180px;
-          width:45%;
-          margin-left: 3%;
+          height:400px;
+          width:40%;
+          margin-left: 7%;
           background-color: white;
           position: relative;
           margin-top: 5%;
-          border-radius: 10px;
+          border-radius: 30px;
           span{
             display: inline-block;
             width:100%;
-            font-size: 3em;
+            font-size: 36px;
             font-weight: bolder;
             margin-top: 5%;
-           text-align: left;
+            text-align: left;
             text-indent: 20px;
           }
           img{
-            height:60px;
-            width:60px;
+            height:140px;
+            width:140px;
             position: absolute;
             right:10px;
             bottom: 10px;
@@ -167,50 +176,48 @@
       .more{
         width:100%;
         display: inline-block;
-        height:380px;
+        padding-bottom:60px;
         ul{
           width:100%;
           padding-inline-start: 0;
-          height:300px;
           list-style: none;
           li{
             float: left;
             width:44%;
-            height:40px;
+            height:90px;
             background-color: white;
             border-radius: 10px;
             text-align: center;
-            font-size: 2em;
+            font-size: 5em;
             margin-left: 4%;
-            margin-top: 5%;
-            line-height: 40px;
+            margin-top: 4%;
+            line-height: 80px;
           }
         }
       }
   }
     .home{
-      margin-top: 0.5rem;
-
+      margin-top: 228px;
       p{
         color: #ffe84f;
-        font-size: 1rem;
+        font-size: 3rem;
         float: left;
         margin-left: 1rem;
-        margin-top: 2.5rem;
+        margin-top: 3rem;
         display: flex;
         flex-direction: row;
         font-family: 楷体;
       }
       p:last-child{
         float: right;
-        margin-right: 1.5rem;
+        margin-right: 1.2rem;
       }
       img{
         position: absolute;
-        width: 60px;
-        height: 35px;
-        margin-top: 1.9rem;
-        margin-left: -7.7rem;
+        width: 150px;
+        height: 80px;
+        margin-top: 4rem;
+        margin-left: -20rem;
       }
     }
   }

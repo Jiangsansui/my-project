@@ -197,20 +197,21 @@
           display: flex;
           flex-direction: row;
           background-size: 100% 100%;
-          height:80px;
+          height:100px;
           margin-left: 2%;
           margin-top: 2%;
           position: relative;
           .lImg{
-            height:25px;
-            width:25px;
+            height:50px;
+            width:50px;
             margin-top: 15px;
             margin-left: 15%;
             z-index: 999;
           }
           span{
-            font-size: 2em;
+            font-size: 4em;
             margin-left: 2%;
+            margin-top:1.5rem;
             z-index: 9999;
             display: inline-block;
             width:50%;

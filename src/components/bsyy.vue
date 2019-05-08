@@ -7,10 +7,10 @@
     <div class="sz">
       <ul>
         <li><span>星期一</span><span>2019-1-1</span></li>
-        <li><span>星期一</span><span>2019-1-1</span></li>
-        <li><span>星期一</span><span>2019-1-1</span></li>
-        <li><span>星期一</span><span>2019-1-1</span></li>
-        <li><span>星期一</span><span>2019-1-1</span></li>
+        <li><span>星期二</span><span>2019-1-1</span></li>
+        <li><span>星期三</span><span>2019-1-1</span></li>
+        <li><span>星期四</span><span>2019-1-1</span></li>
+        <li><span>星期五</span><span>2019-1-1</span></li>
 
       </ul>
     </div>
@@ -24,12 +24,12 @@
         </div>
       </div>
       <div class="two">
-        <hr style="border:0.5px solid #ffffff;width:96%"/>
+        <hr style="border:0.5px solid #ffffff;width:96%;margin-top: 2rem"/>
         <ul>
           <li v-for="(item,index) in date" :key="index">
             <span>{{item.date}}</span>
-            <span class="spanCen">{{item.first}}</span>
-            <span class="spanRig">{{item.second}}</span>
+            <span>{{item.first}}</span>
+            <span >{{item.second}}</span>
           </li>
         </ul>
       </div>
@@ -40,7 +40,8 @@
         <span>返回</span>
       </div>
         <div class="item t">
-      <span>返回</span>
+      <span>确定</span>
+
     </div>
   </div>
     <div class="home">
@@ -95,9 +96,10 @@ export default {
   display: inline-block;
   background: url(../assets/bgt.png);
   font-size: 62.5%;
+  overflow: hidden;
   .head{
     width: 100%;
-    height: 45px;
+    height: 130px;
     background: url("../assets/index/title.png") no-repeat;
     background-size: 70% 90%;
     margin-top: 20px;
@@ -111,6 +113,7 @@ export default {
     color:#ffffff;
     font-weight: bolder;
     letter-spacing: 2px;
+    padding-bottom: 20px;
   }
   .sz{
     width: 100%;
@@ -135,10 +138,13 @@ export default {
         margin-left: 2%;
         margin-top: 2%;
         span{
-          font-size: 28px;
+          font-size: 34px;
           line-height: 40px;
           margin-left: 2%;
           color:#222a32;
+        }
+        span:last-child{
+          font-size:28px;
         }
       }
     }
@@ -146,7 +152,7 @@ export default {
   .footer{
     border-radius: 25px;
     width: 98%;
-    height:550px;
+    height:650px;
     margin-left: 1%;
     background-color: rgba(250,250,250,0.4);
     .one{
@@ -154,9 +160,11 @@ export default {
       flex-direction: column;
       width:100%;
       p{
+        color:#009ce1;
         text-align: left;
         text-indent: 3em;
-        font-size: 4em;
+        font-size: 30px;
+        margin-left: -4rem;
       }
       .ww{
         width:100%;
@@ -165,7 +173,8 @@ export default {
         span{
           display: inline-block;
           width:33%;
-          font-size: 3em;
+          font-size: 30px;
+          text-align: center;
         }
       }
     }
@@ -185,19 +194,12 @@ export default {
           width:100%;
           height:90px;
           span{
-            font-size: 4em;
+            font-size: 30px;
             display: inline-block;
             width:33%;
-            text-align: left;
-            text-indent: 4rem;
+            text-align: center;
             margin-top: 30px;
             line-height: 2rem;
-          }
-          .spanCen{
-             text-indent: 7rem;
-          }
-          .spanRig{
-            text-indent: 9rem;
           }
         }
       }
@@ -222,344 +224,41 @@ export default {
     }
 }
     .t{
+      background: url("../assets/index/sure.png");
       margin-left: 10%;
+      background-size: 100% 100%;
     }
   }
   .sz{
     margin-top: -2rem;
   }
   .home{
-    margin-top: 0.5rem;
+    margin-top: 232px;
 
     p{
       color: #ffe84f;
-      font-size: 1rem;
+      font-size: 3rem;
       float: left;
       margin-left: 1rem;
-      margin-top: 2.5rem;
+      margin-top: 2.8rem;
       display: flex;
       flex-direction: row;
       font-family: 楷体;
     }
     p:last-child{
       float: right;
-      margin-right: 1.5rem;
+      margin-right: 1.2rem;
     }
     img{
       position: absolute;
-      width: 60px;
-      height: 35px;
-      margin-top: 1.9rem;
-      margin-left: -7.7rem;
+      width: 150px;
+      height: 80px;
+      margin-top: 4rem;
+      margin-left: -20rem;
     }
   }
 
-  @media only screen and (max-width: 435px){
-  .content{
-    ul{
-      padding-bottom:20px;
-      padding-top: 10px;
-      border-radius: 15px;
-      li{
-        width:22.5%;
-        height:40px;
-        img{
-          height:25px;
-          width:25px;
-          margin-top: 7.5px;
-          margin-left: 7%;
-        }
-        span{
-          font-size: 1.5em;
-          line-height: 40px;
-        }
-      }
-    }
-  }
-    .text{
-      font-size: 2.2em;
-    }
-    .sz{
-      ul{
-        padding-bottom:20px;
-        padding-top: 10px;
-        li{
-          width:18%;
-          height:40px;
-          border-radius: 10px;
-          img{
-            height:25px;
-            width:25px;
-            margin-top: 7.5px;
-            margin-left: 7%;
-          }
-          span{
-            font-size: 1.5em;
-            line-height: 20px;
-          }
-        }
-      }
-    }
-    .footer{
-      height:250px;
-      hr{
-        margin-top: -3rem;
-      }
-      .one{
-         p{
-           font-size: 2em;
-         }
-        .ww{
-          span{
-            font-size: 1.5em;
-          }
-        }
-      }
-      .two{
-        margin-top: 60px;
-       ul{
-         li{
-           height:40px;
-           span{
-             font-size:1.5em;
-             width: 25%;
-             text-indent: 1rem;
-           } } } }
-      .button{
-        img{
-          width: 100px;
-          height:50px;
-        }
-      }
-    }
-    .button{
-     .item{
-       height:60px;
-       span{
-         line-height: 60px;
-         font-size: 2em;
-       }
-     }
-    }
-    .home{
-      margin-top: 0.5rem;
 
-      p{
-        color: #ffe84f;
-        font-size: 1rem;
-        float: left;
-        margin-left: 1rem;
-        margin-top: 2.5rem;
-        display: flex;
-        flex-direction: row;
-        font-family: 楷体;
-      }
-      p:last-child{
-        float: right;
-        margin-right: 1.5rem;
-      }
-      img{
-        position: absolute;
-        width: 60px;
-        height: 35px;
-        margin-top: 1.9rem;
-        margin-left: -7.7rem;
-      }
-    }
-  }
-  @media only screen and (max-width: 375px){
-    .text{
-      font-size: 1.8em;
-      width:100%;
-    }
-  }
-  @media only screen and (max-width: 360px){
-    .text{
-      font-size: 1.3em;
-    }
-  }
-  @media only screen and (max-width: 768px){
-    .content{
-      ul{
-        li{
-         span{
-           font-size: 3em;
-         }
-        }
-      }
-    }
-    .text{
-      width: 100%;
-      font-size: 26px;
-    }
-    .sz{
-      ul{
-        padding-bottom: 5px;
-        li{
-        background-size: 100% 70%;
-        span{
-          font-size: 24px;
-        }
-          span:last-child{
-            margin-top: -0.5rem;
-            font-size: 18px;
-          }
-        }
-      }
-    }
-    .footer{
-      border-radius: 20px;
-.one{
-  p{
-    margin-left: -3rem;
-  }
-
-} }
-  }
-  @media only screen and (max-width: 375px){
-    .content{
-      ul{
-        li{
-          span{
-            font-size: 1em;
-          }
-        }
-      }
-    }
-    .text{
-      width: 100%;
-      font-size: 12px;
-    }
-    .sz{
-      ul{
-        padding-bottom: 5px;
-        li{
-          background-size: 100% 90%;
-          span{
-            font-size: 15px;
-          }
-          span:last-child{
-            line-height: 2rem;
-            font-size: 10px;
-          }
-        }
-      }
-    }
-    .footer{
-      height: 300px;
-      border-radius: 15px;
-      .one{
-        p{
-          margin-left: -1.5rem;
-        }
-
-      }
-
-    }
-      .button{
-      margin-top: 20px;
-      .item{
-        width: 35%;
-        height:50px;
-        margin-left: 10%;
-      }
-    }
-  }
-  @media only screen and (max-width: 414px){
-    .content{
-      ul{
-        li{
-          span{
-            font-size: 1em;
-          }
-        }
-      }
-    }
-
-
-    .text{
-      width: 100%;
-      font-size: 1rem;
-    }
-    .sz{
-      ul{
-        padding-bottom: 5px;
-        li{
-          background-size: 100% 90%;
-          span{
-            font-size: 15px;
-          }
-          span:last-child{
-            line-height: 2rem;
-            font-size: 10px;
-          }
-        }
-      }
-    }
-    .footer{
-      height: 300px;
-      border-radius: 15px;
-      .one{
-        p{
-          margin-left: -1.5rem;
-        }
-
-      }
-
-    }
-  }
-  @media only screen and (max-width: 414px){
-    .content{
-      ul{
-        li{
-          width:24%;
-          margin-left: 1%;
-        }
-      }
-    }
-    .text{
-      width: 100%;
-      font-size: 0.8rem;
-    }
-    .sz{
-      ul{
-        li{
-          background-size: 100% 90%;
-          span{
-            font-size: 12px;
-          }
-        }
-      }
-    }
-    .footer{
-      height: 300px;
-      border-radius: 15px;
-      .one{
-        p{
-          margin-left: -1.5rem;
-        }
-
-      }
-      .two{
-        ul{
-          margin-left: -1rem;
-          margin-top:-1.5rem;
-          li{
-            span{
-              width: 29%;
-            }
-            .spanCen{
-              text-indent: 4rem;
-            }
-            .spanRig{
-              text-indent: 5rem;
-            }
-          }
-        }
-      }
-
-    }
-  }
 }
 
 

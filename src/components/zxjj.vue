@@ -4,7 +4,7 @@
     <hr style="border:0.5px solid white;width:96%"/>
     <head-Component :num="1"></head-Component>
     <div class="content">
-    <h4>龙湾区服务中心简介</h4>
+    <h1>龙湾区服务中心简介</h1>
       <div class="center">
         <img src="../assets/jianjie.png">
         <div class="rightText">
@@ -42,72 +42,85 @@
     display: inline-block;
     background: url(../assets/bgt.png);
     font-size: 62.5%;
-
+    overflow: hidden;
     .head {
       width: 100%;
-      height: 45px;
+      height: 130px;
       background: url("../assets/index/title.png") no-repeat;
       background-size: 70% 90%;
       margin-top: 20px;
     }
     .content {
-      margin-top: -0.5rem;
+      margin-top: 0.5rem;
       font-family: "Microsoft YaHei";
       width: 98%;
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
-      flex-direction: column;
       margin-left: 1%;
       border-radius: 3%;
       background-color: rgba(250, 250, 250, 0.4);
-      padding-bottom: 30px;
+      position: relative;
+      padding-bottom: 250px;
+      h1{
+        font-size: 3rem;
+        text-align: center;
+        width: 100%;
+      height:30px;
+      }
       .center{
         width:100%;
         display: flex;
+        height:900px;
+        margin-top: 60px;
         flex-direction: row;
         img{
-          width:45%;
-          height:180px;
+          width:50%;
+          height:500px;
           margin-left: 2.5%;
         }
         .rightText{
-          width:45%;
+          font-size: 28px;
+          width:40%;
           margin-left: 2.5%;
-          line-height: 18px;
+          line-height: 50px;
           text-align: justify;
+
         }
       }
       .botText{
         width:95%;
         margin-left: 2.5%;
-        padding-top: 20px;
         text-align: justify;
-        line-height: 18px;
+        position: absolute;
+       margin-top: 700px;
+        font-size: 28px;
+        display: inline-block;
+        line-height: 50px;
       }
     }
     .home{
-      margin-top: 0.5rem;
-
+      margin-top: -1rem;
       p{
         color: #ffe84f;
-        font-size: 1rem;
+        font-size: 3rem;
         float: left;
         margin-left: 1rem;
-        margin-top: 2.5rem;
+        margin-top: 2.8rem;
         display: flex;
         flex-direction: row;
         font-family: 楷体;
       }
       p:last-child{
         float: right;
-        margin-right: 1.5rem;
+        margin-right: 1.2rem;
       }
       img{
         position: absolute;
-        width: 60px;
-        height: 35px;
-        margin-top: 1.9rem;
-        margin-left: -7.7rem;
+        width: 150px;
+        height: 80px;
+        margin-top: 4rem;
+        margin-left: -20rem;
       }
     }
   }
