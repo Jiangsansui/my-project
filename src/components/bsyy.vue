@@ -93,7 +93,6 @@ export default {
 <style lang="scss" scoped>
 .container{
   width: 100%;
-  display: inline-block;
   background: url(../assets/bgt.png);
   font-size: 62.5%;
   overflow: hidden;
@@ -233,7 +232,7 @@ export default {
     margin-top: -2rem;
   }
   .home{
-    margin-top: 232px;
+    margin-top: 266px;
 
     p{
       color: #ffe84f;

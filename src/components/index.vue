@@ -158,7 +158,7 @@
 <style lang="scss" scoped>
   .container {
     width: 100%;
-    display: inline-block;
+   
     background: url(../assets/bgt.png);
     font-size: 62.5%;
     overflow: hidden;
@@ -173,6 +173,7 @@
       margin-top: 0.5rem;
       font-family: "Microsoft YaHei";
       width: 98%;
+      height:1350px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -369,6 +370,7 @@
 
     }
     .home{
+    margin-top:-1.8rem;
       p{
         color: #ffe84f;
         font-size: 3rem;

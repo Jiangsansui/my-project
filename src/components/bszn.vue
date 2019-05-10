@@ -95,7 +95,6 @@
 <style lang="scss" scoped>
   .container {
     width: 100%;
-    display: inline-block;
     background: url(../assets/bgt.png);
     font-size: 62.5%;
     overflow: hidden;
@@ -197,7 +196,7 @@
       }
   }
     .home{
-      margin-top: 228px;
+      margin-top: 263px;
       p{
         color: #ffe84f;
         font-size: 3rem;

@@ -46,15 +46,16 @@ export default {
     background: url(../assets/bgt.png) center no-repeat;
     background-size: cover;
     font-size: 62.5%;
-
+    overflow: hidden;
     .head {
         width: 100%;
-        height: 45px;
+         height: 130px;
         background: url("../assets/index/title.png") no-repeat;
         background-size: 70% 90%;
         margin-top: 20px;
     }
     .el-content {
+        height:1300px;
         padding: 0 40px;
         .title {
             line-height: 36px;
@@ -68,46 +69,36 @@ export default {
             margin-bottom: 44px;
             font-size: 26px;
             .tit {
-                padding: 0 0 16px;
+               
+                padding: 0 0 10px;
             }
         }
     }
-    .home{
-        margin-top: 0.5rem;
-        p {
-            color: #ffe84f;
-            font-size: 1rem;
-            float: left;
-            margin-left: 1rem;
-            margin-top: 2.5rem;
-            display: flex;
-            flex-direction: row;
-            font-family: 楷体;
-        }
-        p:last-child {
-            float: right;
-            margin-right: 1.5rem;
-        }
-        img {
-            position: absolute;
-            width: 60px;
-            height: 35px;
-            margin-top: 1.9rem;
-            margin-left: -7.7rem;
-        }
-    }
-    @media screen and(max-width: 384px){
-       .content{
-            height:550px;
-       }
-    }
-    @media screen and(max-width: 320px){
-      .content{
-            height:600px;
+  .home{
+      margin-top:-0.3rem;
+     
+      p{
+        color: #ffe84f;
+        font-size: 3rem;
+        float: left;
+        margin-left: 1rem;
+        margin-top: 2.8rem;
+        display: flex;
+        flex-direction: row;
+        font-family: 楷体;
+      }
+      p:last-child{
+        float: right;
+        margin-right: 1.2rem;
+      }
+      img{
+        position: absolute;
+        width: 150px;
+        height: 80px;
+        margin-top: 4rem;
+        margin-left: -20rem;
       }
     }
-    @media screen and(max-width: 375px){
-
-    }
+   
 }
 </style>
